@@ -7,7 +7,7 @@ function IndexCtrl($scope, $http) {
 }
 */
 
-angular.module('myapp.controllers', []).controller('IndexCtrl', ['$scope', function($scope) {
+myapp.controller('IndexCtrl', ['$scope', function($scope) {
     $scope.greeting = 'Hola!';
     
     $scope.agent = "Matt Hersh";
