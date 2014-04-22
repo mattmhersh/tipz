@@ -10,6 +10,6 @@ angular.module('myApp.directives', []).
   directive('myCustomer', function() {
     return {
         restrict: 'E',
-        template: 'Customer Name: {{customer.name}} Customer Address: {{customer.adddress}}'
+        template: 'Customer Name: {{customer.name}} Customer Address: {{customer.address}}'
     }
 });
