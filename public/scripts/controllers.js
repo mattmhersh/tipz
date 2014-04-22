@@ -1,7 +1,6 @@
 'use strict';
 
 /* Controllers */
-
 angular.module('myApp.controllers', [])
   .controller('IndexCtrl', ['$scope', function($scope) {
     

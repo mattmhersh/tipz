@@ -1,17 +1,6 @@
-/*
-angular.module('myapp.directives', []).directive('myCustomer', function() {
-    return {
-        restrict: 'E',
-        template: 'Agent: {{agent}} '
-    }
-});
-*/
-
 'use strict';
 
 /* Directives */
-
-
 angular.module('myApp.directives', []).
   directive('appVersion', ['version', function(version) {
     return function(scope, elm, attrs) {
@@ -21,6 +10,6 @@ angular.module('myApp.directives', []).
   directive('myCustomer', function() {
     return {
         restrict: 'E',
-        template: 'Agent: {{agent}} '
+        template: 'Customer Name: {{customer.name}} Customer Address: {{customer.adddress}}'
     }
 });
