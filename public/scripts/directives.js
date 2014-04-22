@@ -16,6 +16,9 @@ angular.module('myApp.directives', []).
     .directive('mySample', function() {
         return {
             restrict: 'EC',
-            template: "<input type='text' ng-model='sampleData' /> {{sampleData}} <br />",
+            template: "<br /><br /><input type='text' ng-model='sampleData' /> {{sampleData}} <br />",
+            scope: {
+            
+            }
         }
     });
