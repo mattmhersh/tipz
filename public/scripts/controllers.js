@@ -10,6 +10,10 @@ angular.module('myApp.controllers', [])
   
     $scope.customer = { name: "Bob", address: "104 welsh dr." };
   }])
-  .controller('MyCtrl2', [function() {
-
+  .controller('GreetingController', [function() {
+    function GreetingController($scope) {
+        $scope.sayHello = function() {
+            alert('hello');
+        }
+    }
   }]);
