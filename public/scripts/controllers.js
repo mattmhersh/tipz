@@ -11,9 +11,7 @@ angular.module('myApp.controllers', [])
     $scope.customer = { name: "Bob", address: "104 welsh dr." };
   }])
   .controller('GreetingController', ['$scope', function($scope) {
-    //function GreetingController($scope) {
         $scope.sayHello = function() {
             alert('hello');
         }
-    //}
   }]);
