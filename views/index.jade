@@ -51,11 +51,27 @@ block content
                     option(value="1") Thing 1
                     option(value="2") Thing 2
                     option(value="3") Thing 3
+                    
+        br
+        br
+        Test:
+            div(ng-controller="CarouselDemoCtrl")
+            
+            div(style="height: 305px")
+                carousel(interval="myInterval")
+                    slide(ng-repeat="slide in slides", active="slide.active")
+                    img(ng-src="{{slide.image}}", style="margin:auto;")
+                        div(class="carousel-caption")
+                        h4(Slide {{$index}})
+                        p {{slide.text}}
+                
             
     script(type='text/javascript', src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
     script(type='text/javascript', src='//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js')
     script(type='text/javascript', src='//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.15/angular.min.js')
     script(type='text/javascript', src='//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.15/angular-route.js')
+    script(type='text/javascript', src='//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.11.0.js')
+    
     
     script(type='text/javascript', src='/scripts/kendo.all.min.js')
     script(type='text/javascript', src='/scripts/angular-kendo.js')
